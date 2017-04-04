@@ -51,7 +51,12 @@ document.body.onmouseup = function() {
 
 
 function drawBarChart(){
+
+  //Test
+  console.log('test');
+  console.log(countries.SWE.co2[2010]);
   //Create tooltip
+
   var tip = d3.tip()
   .attr('class', 'd3-tip')
   .offset([-20, 0])
@@ -85,7 +90,7 @@ var data = d3.entries(countries).sort(
 
     //Create new bars
     
-	selection.enter()
+  selection.enter()
       .append( "rect" )
       .attr('class', 'bar')
       .attr('id', function(d){
@@ -96,12 +101,12 @@ var data = d3.entries(countries).sort(
       })
       .attr( "width", 4 )
       .attr( "fill", function(d) {
-		  if (d.value.continentID%2 == 0) {
-			  return "#607B8D";
-		  } else {
-			  return "#424242";
-		  }
-	  })
+      if (d.value.continentID%2 == 0) {
+        return "#607B8D";
+      } else {
+        return "#424242";
+      }
+    })
 
     //Set bar heights based on data
     selection
