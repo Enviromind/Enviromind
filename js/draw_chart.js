@@ -51,10 +51,6 @@ document.body.onmouseup = function() {
 
 
 function drawBarChart(){
-
-  //Test
-  console.log('test2');
-  console.log(countries.SWE.co2[2010]);
   //Create tooltip
 
   var tip = d3.tip()

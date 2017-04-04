@@ -116,7 +116,7 @@ function updateVis(){
 	console.log("here are our countries after manipulation", countries);
 // Draws map, barchart, updates mapcolor, hides loading message and displays it all! 
 	draw(topo);
-	// drawBarChart();
+	drawBarChart();
 	updateMapColors();
 	displayContent();
 	//countryInteraction();
@@ -274,7 +274,6 @@ function readCo2Total(){
 				}
 			}
 		})
-	drawBarChart();	
 }
 
 //Add continent-code to countries
