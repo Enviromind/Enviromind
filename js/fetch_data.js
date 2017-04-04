@@ -256,7 +256,6 @@ function readCo2(){
 				}
 			}
 		})
-	drawBarChart();	
 }
 
 //Add total co2 per country to countries
@@ -275,6 +274,7 @@ function readCo2Total(){
 				}
 			}
 		})
+	drawBarChart();	
 }
 
 //Add continent-code to countries
